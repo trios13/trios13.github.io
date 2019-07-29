@@ -14,9 +14,13 @@
     <h1>Hello World</h1>
     <p>I'm hosted with Github Pages.</p>
     <p>I'm a basic website created so Troy can re-learn an experiment with website development.</p>
-    <button type="button" id="jstrigger" onclick="javascript:hiClick();">Click Me</button>
+    <button type="button" id="jstrigger" onclick="hiClick();">Click Me</button>
     <script>
-        document.body.innerHTML = "<p> Hi Debbie, I Love You!</p>"
+        function hiClick(){
+            document.getElementById('hello').innerHTML = " Hi Debbie, I Love You!";
+        }
     </script>
+    <p id="hello">Click The Button.</p>
+
 </body>
 </html>
