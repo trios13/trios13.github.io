@@ -3,11 +3,12 @@ body {
   }
   
   h1 {
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
   }
   
   p {
     font-family: verdana;
     font-size: 20px;
+    color: rgb(74, 83, 32)
   }
