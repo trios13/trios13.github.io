@@ -1,4 +1,4 @@
 function click()
 {
-    document.getElementById("hello").innerHTML = 'Hello Debbie! I love you!'
+    document.getElementById("hello").innerHTML = 'Hi Debbie! I love you!'
 }
