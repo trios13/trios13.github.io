@@ -29,7 +29,8 @@ a:hover {
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  text-align: right;
+  text-align: center;
+  float: right;
 }
 .nav {
   display: flex;
