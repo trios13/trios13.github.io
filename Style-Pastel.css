@@ -29,8 +29,7 @@ a:hover {
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  text-align: center;
-  float: right;
+  text-align: right;
 }
 .nav {
   display: flex;
@@ -39,6 +38,7 @@ a:hover {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  float: right;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
