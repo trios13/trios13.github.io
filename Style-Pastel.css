@@ -24,12 +24,12 @@ a:hover {
 /* Section Styles */
 
 .main-nav {
-  width: 25%;
+  width: 100%;
   background: #853eff;
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  text-align: center;
+  text-align: right;
 }
 .nav {
   display: flex;
