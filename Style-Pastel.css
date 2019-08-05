@@ -39,8 +39,8 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
-.name {
-  text-align: left;
+.nav .name {
+  display: none;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
