@@ -4,7 +4,7 @@
 }
   /*Styles*/
 body {
-  margin: 150px;
+  margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -33,7 +33,9 @@ a:hover {
   text-align: center;
   padding: auto;
   background-color: orange;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 500px;
 }
 
 .main-nav {
