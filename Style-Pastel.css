@@ -33,6 +33,7 @@ a:hover {
   text-align: center;
   padding: auto;
   background-color: orange;
+  margin: auto;
 }
 
 .main-nav {
@@ -42,6 +43,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: right;
+  margin-bottom: 50px;
 }
 .nav {
   display: flex;
