@@ -14,6 +14,8 @@ body {
 
 img {
   border-radius: 50%;
+  max-height: 150px;
+  max-width:  150px;
 }
 
 /* Link Styles */
