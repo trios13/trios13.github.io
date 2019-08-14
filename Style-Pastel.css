@@ -2,7 +2,7 @@
 * { 
   box-sizing: border-box;
 }
-  
+  /*Styles*/
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +11,11 @@ body {
   color: #ffd1dc;
   background: #e7ffac;
 }
+
+img {
+  border-radius: 50%;
+}
+
 /* Link Styles */
 
 a {
@@ -22,6 +27,11 @@ a:hover {
 }
 
 /* Section Styles */
+.header-content {
+  text-align: center;
+  padding: auto;
+  background-color: orange;
+}
 
 .main-nav {
   width: 100%;
