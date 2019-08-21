@@ -9,6 +9,9 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #ffd1dc;
+}
+
+header {
   background-color: orange;
 }
 
