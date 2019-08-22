@@ -4,8 +4,6 @@
 }
   /*Styles*/
 body {
-  /* margin: 0;
-  padding: 0; */
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #ffd1dc;
@@ -13,8 +11,8 @@ body {
 
 header {
   background-color: orange;
-  padding: 2em;
-  margin: 2em;
+  padding: 2em 0;
+  margin: 2em 0;
 }
 
 img {
