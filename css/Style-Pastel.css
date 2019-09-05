@@ -41,7 +41,7 @@ a:hover {
 /* ---- Layout Containers ---- */
 
 .wrap {
-  min-height: 100vh; /*  min-height: calc(100vh-89px);*/
+  min-height: calc(100vh-18px);
 
 }
 .container {
