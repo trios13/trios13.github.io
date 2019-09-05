@@ -39,9 +39,19 @@ a:hover {
 ==================================== */
 
 /* ---- Layout Containers ---- */
+
+.wrap {
+  min-height: 100vh; /*  min-height: calc(100vh-89px);*/
+
+}
 .container {
   background-color: orange;
   width: 70%;
+}
+
+.main-header {
+
+
 }
 .main-nav {
   width: 100%;
