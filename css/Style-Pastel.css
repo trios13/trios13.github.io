@@ -29,6 +29,7 @@ footer {
 
 }
 
+}
 /* Link Styles */
 
 a {
@@ -53,6 +54,7 @@ a:hover {
   background-color: orange;
   width: 70%;
   margin: 0 auto;
+  padding-bottom: 2em;
 }
 
 .main-header {
