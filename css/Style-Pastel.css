@@ -54,7 +54,7 @@ a:hover {
   background-color: orange;
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 2em;
+  padding: 2em;
 }
 
 .main-header {
