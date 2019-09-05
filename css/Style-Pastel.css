@@ -47,6 +47,7 @@ a:hover {
 .container {
   background-color: orange;
   width: 70%;
+  margin: 0 auto;
 }
 
 .main-header {
