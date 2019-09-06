@@ -8,13 +8,13 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #ffd1dc;
 }
 header {
 }
 
 h1 {
   padding: 0;
+  color: #61F7FF;
 }
 
 img {
@@ -86,8 +86,7 @@ a:hover {
 .main-content {
   color:#B19CD9;
   padding: 2em;
-  margin: 2em 0;
-  background-color: #61F7FF;
+  background-color: #ffd1dc;
 }
 
 
