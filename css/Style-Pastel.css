@@ -63,6 +63,7 @@ a:hover {
   min-height: 30px;
   position: fixed;
   text-align: right;
+  margin-bottom: 25px;
 }
 .nav {
   display: flex;
