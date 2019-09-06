@@ -46,26 +46,21 @@ a:hover {
 
 /* ---- Layout Containers ---- */
 
-.wrap {
+ .wrap {
   min-height: calc(100vh-18px);
 
 }
+
 .container {
   background-color: orange;
-  width: 80%;
   margin: 0 auto;
-  padding: 2em;
-}
+  padding-bottom: 2em;
+} 
 
-.main-header {
-
-
-}
 .main-nav {
   width: 100%;
   background: #853eff;
   min-height: 30px;
-  /* padding: 10px; */
   position: fixed;
   text-align: right;
 }
@@ -88,3 +83,27 @@ a:hover {
   color: white
 }
 
+.main-content {
+  color:#B19CD9;
+  padding: 3em;
+  margin: 2em 0;
+  background-color: #61F7FF;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+    .container {
+      width: 80%;
+    }
+    
+    .name,
+    .main-nav li {
+      display: inline;
+    } 
+    
+  }
