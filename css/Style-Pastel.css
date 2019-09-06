@@ -84,7 +84,8 @@ a:hover {
 }
 
 .main-content {
-  color:#B19CD9;
+  /* color:#32D93A;  */
+  color: #E08119; 
   padding: 2em;
   background-color: #ffd1dc;
 }
