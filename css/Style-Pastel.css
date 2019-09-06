@@ -9,8 +9,6 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
-header {
-}
 
 h1 {
   padding: 0;
@@ -48,12 +46,12 @@ a:hover {
 
  .wrap {
   min-height: calc(100vh-18px);
-
 }
 
 .container {
   background-color: orange;
   margin: 0 auto;
+  padding-top: 5em;
   padding-bottom: 2em;
 } 
 
@@ -63,7 +61,6 @@ a:hover {
   min-height: 30px;
   position: fixed;
   text-align: right;
-  margin-bottom: 25px;
 }
 .nav {
   display: flex;
