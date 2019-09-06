@@ -104,4 +104,9 @@ a:hover {
       display: inline;
     } 
     
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
   }
