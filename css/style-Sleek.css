@@ -8,28 +8,34 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: black;
 }
 
-header {
-  background-color: lightgray;
+h1 {
+  padding: 0;
+  color: silver;
 }
 
 img {
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 50%;
   max-height: 25%;
   max-width:  25%;
 }
 
+footer {
+  color:silver;
+
+}
+
+}
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #0499ff;
+  color: black;
 }
 a:hover {
-  color: white;
+  color: silver;
 }
 
 /* ================================= 
@@ -38,15 +44,21 @@ a:hover {
 
 /* ---- Layout Containers ---- */
 
-.wrapper {
-  width: 70%;
-  margin: 0 auto; 
+ .wrap {
+  min-height: calc(100vh-18px);
 }
+
+.container {
+  background-color: black
+  margin: 0 auto;
+  padding-top: 3em;
+  padding-bottom: 2em;
+} 
+
 .main-nav {
   width: 100%;
-  background: grey;
+  background: blue;
   min-height: 30px;
-  padding: 10px;
   position: fixed;
   text-align: right;
 }
@@ -68,3 +80,28 @@ a:hover {
 .nav a:hover {
   color: white
 }
+
+.main-content {
+  /* color:#32D93A;  */
+  color: black; 
+  padding: 2em;
+  background-color: grey;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+    .container {
+      width: 80%;
+    }
+    
+    .name,
+    .main-nav li {
+      display: inline;
+    } 
+    
+  }
