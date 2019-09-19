@@ -56,7 +56,6 @@ a:hover {
   margin: 0 auto;
   padding-top: 3em;
   padding-bottom: 2em;
-  flex-grow: 1;
 } 
 
 .main-nav {
@@ -90,6 +89,7 @@ a:hover {
   color: #E08119; 
   padding: 2em;
   background-color: #ffd1dc;
+  flex-grow: 1;
 }
 
 
