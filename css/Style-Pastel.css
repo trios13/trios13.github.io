@@ -100,13 +100,6 @@ a:hover {
   background-color: #ffffff;
   flex-grow: 1
 }
-
-.resume-content h1 {
-  color: black;
-  font-weight: bold;
-  text-align: left;
-  padding-bottom: -2em;
-}
 .resume-address {
   text-align: left;
   font-size: 10px;
@@ -120,6 +113,11 @@ a:hover {
   margin-bottom: 5em;
 }
 
+.resume-headers {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
 
 
 /* ================================= 
