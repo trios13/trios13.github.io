@@ -100,17 +100,18 @@ a:hover {
   color: black; 
   /*padding: 2em;*/
   background-color: #ffffff;
-  flex-grow: 1;
-  float: left;
+  flex-grow: 1
 }
 
 .resume-content h1 {
   color: black;
+  float: left;
 }
 .resume-address {
   text-align: left;
   font-size: 10px;
   margin-bottom: 5em;
+  float: left;
 }
 
 .resume-contact {
