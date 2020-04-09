@@ -98,7 +98,8 @@ a:hover {
 .resume-content {
   color: black; 
   background-color: #ffffff;
-  flex-grow: 1
+  flex-grow: 1;
+  display: inline-block;
 }
 .resume-address {
   text-align: left;
