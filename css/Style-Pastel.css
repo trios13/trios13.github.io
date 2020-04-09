@@ -92,6 +92,13 @@ a:hover {
   flex-grow: 1;
 }
 
+.resume-content {
+  /* color:#32D93A;  */
+  color: black; 
+  /*padding: 2em;*/
+  background-color: #ffd1dc;
+  flex-grow: 1;
+}
 
 /* ================================= 
   Media Queries
