@@ -91,13 +91,27 @@ a:hover {
   background-color: #ffd1dc;
   flex-grow: 1;
 }
+ 
+/* ==============================================
+  Resume Page
+  ===================================== */
 
 .resume-content {
   /* color:#32D93A;  */
-  color: #000000; 
+  color: black; 
   /*padding: 2em;*/
   background-color: #ffd1dc;
   flex-grow: 1;
+}
+
+.resume-address {
+  float: left;
+  font-size: 1em;
+}
+
+.resume-contact {
+  float: right;
+  font-size: 1em;
 }
 
 /* ================================= 
