@@ -96,17 +96,15 @@ a:hover {
   ===================================== */
 
 .resume-content {
-  /* color:#32D93A;  */
   color: black; 
-  /*padding: 2em;*/
   background-color: #ffffff;
   flex-grow: 1
 }
 
 .resume-content h1 {
   color: black;
-  float: left;  
   font-weight: bold;
+  align-content: left;
 }
 .resume-address {
   text-align: left;
@@ -116,9 +114,9 @@ a:hover {
 }
 
 .resume-contact {
-  float: right;
   text-align: right;
   font-size: 10px;
+  margin-bottom: 5em;
 }
 
 
