@@ -87,7 +87,8 @@ a:hover {
   /* color:#32D93A;  */
   color: #E08119; 
   padding: 2em;
-  background-color: #ffd1dc;
+  /*background-color: #ffd1dc;*/
+  background-color: white;
   flex-grow: 1;
 }
  
@@ -114,6 +115,8 @@ a:hover {
   text-align: right;
   font-size: 10px;
 }
+
+
 
 /* ================================= 
   Media Queries
