@@ -104,25 +104,24 @@ a:hover {
 .resume-address {
   text-align: left;
   font-size: 10px;
-  margin-bottom: 5em;
 }
 
 .resume-contact {
   text-align: right;
+  float: right;
   font-size: 10px;
-  margin-bottom: 5em;
 }
 
 .resume-headers {
   color: black;
   font-weight: bold;
   text-align: left;
-  padding-right: 5em;
 }
 
 .resume-details {
   color: black;
   font-weight: normal;
+  padding-bottom: 5em;
 }
 
 
