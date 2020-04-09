@@ -110,6 +110,10 @@ a:hover {
   flex-basis: 50%;
 }
 
+.resume-address {
+  text-align: left;
+}
+
 .resume-contact {
   text-align: right;
 }
