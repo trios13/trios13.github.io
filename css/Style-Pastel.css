@@ -87,8 +87,7 @@ a:hover {
   /* color:#32D93A;  */
   color: #E08119; 
   padding: 2em;
-  /*background-color: #ffd1dc;*/
-  background-color: white;
+  background-color: #ffd1dc;
   flex-grow: 1;
 }
  
