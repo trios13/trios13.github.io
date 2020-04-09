@@ -99,6 +99,7 @@ a:hover {
   color: black; 
   background-color: #ffffff;
   flex-grow: 1;
+  padding-top: 2em;
 }
 .resume-address {
   text-align: left;
