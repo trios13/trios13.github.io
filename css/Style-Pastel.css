@@ -103,20 +103,17 @@ a:hover {
   padding-bottom: 15px;
 }
 .resume-top {
-  display: flex;
-  flex-wrap: wrap; 
+  display: grid;
+  grid-template-areas: "one two";
   font-size: 10px;
-}
-.resume-address, .resume-contact {
-  flex-basis: 50%;
 }
 
 .resume-address {
-  text-align: left;
+  grid-area: one;
 }
 
 .resume-contact {
-  text-align: right;
+  grid-area: two;
 }
 
 .resume-headers {
