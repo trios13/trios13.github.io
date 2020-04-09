@@ -106,12 +106,12 @@ a:hover {
 
 .resume-address {
   float: left;
-  font-size: 1em;
+  text-align: left;
 }
 
 .resume-contact {
   float: right;
-  font-size: 1em;
+  text-align: right;
 }
 
 /* ================================= 
