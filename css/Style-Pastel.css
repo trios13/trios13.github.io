@@ -110,10 +110,12 @@ a:hover {
 
 .resume-address {
   grid-area: one;
+  text-align: left;
 }
 
 .resume-contact {
   grid-area: two;
+  text-align: right;
 }
 
 .resume-headers {
