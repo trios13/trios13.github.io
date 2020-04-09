@@ -104,10 +104,14 @@ a:hover {
   float: left;
 }
 
+.resume-content h1 {
+  color: black;
+}
 .resume-address {
   
   text-align: left;
   font-size: 10px;
+  margin-bottom: 5em;
 }
 
 .resume-contact {
