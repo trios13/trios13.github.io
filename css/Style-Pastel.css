@@ -104,6 +104,7 @@ a:hover {
 .resume-top {
   display: flex;
   justify-content: space-between; 
+  font-size: 10px;
 }
 .resume-address {
   text-align: left;
