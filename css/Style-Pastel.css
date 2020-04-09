@@ -101,10 +101,10 @@ a:hover {
   /*padding: 2em;*/
   background-color: #ffffff;
   flex-grow: 1;
+  float: left;
 }
 
 .resume-address {
-  float: left;
   text-align: left;
   font-size: 10px;
 }
