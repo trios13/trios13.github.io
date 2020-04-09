@@ -100,7 +100,7 @@ a:hover {
   background-color: #ffffff;
   flex-grow: 1;
   padding-top: 2em;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 .resume-top {
   display: flex;
