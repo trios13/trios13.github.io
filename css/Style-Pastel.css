@@ -103,15 +103,18 @@ a:hover {
   padding-bottom: 15px;
 }
 .resume-top {
-  display: inline-block;
+  /*display: inline-block;*/
   font-size: 10px;
+  white-space: nowrap;
 }
 
 .resume-address {
+  display: inline-block;
   text-align: left;
 }
 
 .resume-contact {
+  display: inline-block;
   text-align: right;
  /* margin: auto;*/
 }
