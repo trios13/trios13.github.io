@@ -113,8 +113,6 @@ a:hover {
 .resume-top {
   font-size: 10px;
   white-space: nowrap;
-  /* margin-bottom: 50px; */
-  
 }
 
 .resume-address {
@@ -122,6 +120,7 @@ a:hover {
   float: left;
   text-align: left;
   width: 50%;
+  margin-bottom: 5em;
 }
 
 .resume-contact {
@@ -129,6 +128,7 @@ a:hover {
   text-align: right;
   float: left;
   width: 50%;
+  margin-bottom: 5em;
 }
 
 /* .resume-name {
