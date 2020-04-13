@@ -111,14 +111,14 @@ a:hover {
   display: inline-block;
   float: left;
   text-align: left;
-  /*width: 50%;*/
+  width: 50%;
 }
 
 .resume-contact {
   display: inline-block;
   text-align: right;
   float: left;
-  /*width: 50%;*/
+  width: 50%;
 }
 
 .resume-headers {
@@ -130,6 +130,10 @@ a:hover {
 .resume-details {
   color: black;
   font-weight: normal;
+}
+
+.resume-education {
+  display: inline-block;
 }
 
 
