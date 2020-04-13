@@ -123,6 +123,8 @@ a:hover {
 
 .resume-name {
   margin: auto;
+  color: black;
+  font-weight: bold;
 }
 
 .resume-headers {
