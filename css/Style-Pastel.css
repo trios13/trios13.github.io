@@ -101,6 +101,7 @@ a:hover {
   flex-grow: 1;
   padding-top: 2em;
   padding-bottom: 15px;
+  display: block;
 }
 .resume-top {
   font-size: 10px;
@@ -123,7 +124,7 @@ a:hover {
 }
 
 .resume-name {
-  margin: auto;
+  text-align: center;
   color: black;
   font-weight: bold;
 }
