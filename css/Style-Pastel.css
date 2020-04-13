@@ -121,6 +121,10 @@ a:hover {
   width: 50%;
 }
 
+.resume-name {
+  text-align: center;
+}
+
 .resume-headers {
   color: black;
   font-weight: bold;
