@@ -108,6 +108,7 @@ a:hover {
   color: black;
   font-weight: bold;
   text-align: center;
+  display: block;
 }
 
 .resume-top {
