@@ -127,8 +127,11 @@ a:hover {
 }
 
 .resume-name {
+  display: block;
+}
+
+.resume-name h1 {
   color: black;
-  float: left;
 }
 
 .resume-headers {
@@ -140,6 +143,7 @@ a:hover {
 .resume-details {
   color: black;
   font-weight: normal;
+  display: block;
 }
 
 .resume-education {
