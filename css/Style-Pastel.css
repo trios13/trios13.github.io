@@ -104,11 +104,11 @@ a:hover {
   display: block;
 }
 
-.resume-content h1 {
+.resume-name h1 {
   color: black;
   font-weight: bold;
   text-align: center;
-  display: block;
+  float: left;
 }
 
 .resume-top {
