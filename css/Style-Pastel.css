@@ -104,17 +104,6 @@ a:hover {
   display: block;
 }
 
-.resume-name {
-  margin-top: 50px;
-}
-.resume-name h1 {
-  color: black;
-  font-weight: bold;
-  /* text-align: center;
-  float: left; */
-  display: block;
-}
-
 .resume-top {
   font-size: 10px;
   white-space: nowrap;
@@ -138,12 +127,16 @@ a:hover {
   margin-bottom: 5em;
 }
 
-/* .resume-name {
-  text-align: center;
-  /* color: black;
-  font-weight: bold; 
-  margin: auto;
-} */
+.resume-name {
+  margin-top: 50px;
+}
+.resume-name h1 {
+  color: black;
+  font-weight: bold;
+  /* text-align: center;
+  float: left; */
+  display: block;
+}
 
 .resume-headers {
   color: black;
