@@ -126,6 +126,11 @@ a:hover {
   margin-bottom: 5em;
 }
 
+.resume-name {
+  color: black;
+  float: left;
+}
+
 .resume-headers {
   color: black;
   font-weight: bold;
