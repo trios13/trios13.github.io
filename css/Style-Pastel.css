@@ -112,6 +112,7 @@ a:hover {
   font-weight: bold;
   /* text-align: center;
   float: left; */
+  display: block;
 }
 
 .resume-top {
