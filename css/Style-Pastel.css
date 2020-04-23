@@ -107,7 +107,6 @@ a:hover {
 .resume-top {
   font-size: 10px;
   white-space: nowrap;
-  margin-bottom: 100px;
 }
 
 .resume-address {
@@ -129,7 +128,6 @@ a:hover {
 .resume-name {
   display: block;
   background-color: blue;
-  white-space: nowrap;
 }
 
 .resume-name h1 {
