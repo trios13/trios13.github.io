@@ -127,14 +127,14 @@ a:hover {
 
 .resume-name {
   margin-top: 100px;
-  display: block;
+  /* display: block; */
   background-color: blue;
-  float: left;
+  text-align: center;
+
 }
 
 .resume-name h1 {
   color: black;
-  margin: auto;
 }
 
 .resume-headers {
