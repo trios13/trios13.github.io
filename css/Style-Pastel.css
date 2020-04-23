@@ -128,8 +128,8 @@ a:hover {
 
 .resume-name {
   display: block;
-  text-align: center;
   background-color: blue;
+  white-space: nowrap;
 }
 
 .resume-name h1 {
