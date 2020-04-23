@@ -129,6 +129,7 @@ a:hover {
   margin-top: 100px;
   display: block;
   background-color: blue;
+  float: left;
 }
 
 .resume-name h1 {
