@@ -131,6 +131,11 @@ a:hover {
   display: block;
 }
 
+.name {
+  color: black; 
+  display: block;
+}
+
 .resume-headers {
   color: black;
   font-weight: bold;
