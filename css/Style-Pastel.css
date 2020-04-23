@@ -125,15 +125,13 @@ a:hover {
   margin-bottom: 5em;
 }
 
-.resume-name {
+/* .resume-name {
   margin-top: 100px;
   display: block;
-  background-color: blue;
-  text-align: center;
+} */
 
-}
-
-.resume-name h1 {
+.name h1 {
+  margin-top: 100px;
   color: black;
   float: left;
 }
