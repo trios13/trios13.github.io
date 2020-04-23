@@ -135,6 +135,7 @@ a:hover {
 
 .resume-name h1 {
   color: black;
+  float: left;
 }
 
 .resume-headers {
