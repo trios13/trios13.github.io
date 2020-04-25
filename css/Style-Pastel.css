@@ -149,6 +149,11 @@ a:hover {
   width: 33%;
 }
 
+.resume-title {
+  font-weight: bold; 
+  text-align: center;
+}
+
 
 /* ================================= 
   Media Queries
