@@ -143,6 +143,10 @@ a:hover {
   display: block;
 }
 
+.resume-details p {
+  margin: 2px;
+}
+
 .resume-education {
   display: inline-block;
   float: left;
