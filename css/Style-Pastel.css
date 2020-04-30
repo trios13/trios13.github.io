@@ -147,6 +147,10 @@ a:hover {
   margin: 2px;
 }
 
+.work-header {
+  margin-top: 10px;
+}
+
 .resume-education {
   display: inline-block;
   float: left;
