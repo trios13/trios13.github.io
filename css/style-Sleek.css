@@ -8,31 +8,33 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1 {
   padding: 0;
-  color: silver;
+  color: gray;
 }
 
 img {
   margin-top: 50px;
   border-radius: 50%;
-  max-height: 50%;
-  max-width:  50%;
+  max-height: 25%;
+  max-width:  25%;
 }
 
 footer {
-  color:silver;
-  background-color: black;
-}
+  color:black;
 
 }
+
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: grey;
+  color: gray;
 }
 a:hover {
   color: white;
@@ -57,7 +59,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: cornflowerblue;
   min-height: 30px;
   position: fixed;
   text-align: right;
@@ -85,7 +87,79 @@ a:hover {
   /* color:#32D93A;  */
   color: black; 
   padding: 2em;
-  background-color: grey;
+  background-color: #ffd1dc;
+  flex-grow: 1;
+}
+ 
+/* ==============================================
+  Resume Page
+  ===================================== */
+
+.resume-content {
+  color: black; 
+  background-color: #ffffff;
+  flex-grow: 1;
+  padding-top: 2em;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.resume-top {
+  font-size: 10px;
+  white-space: nowrap;
+  margin-bottom: 100px;
+}
+
+.resume-address {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  width: 50%;
+  margin-bottom: 5em;
+}
+
+.resume-contact {
+  display: block;
+  text-align: right;
+  float: left;
+  width: 50%;
+  margin-bottom: 5em;
+}
+
+.resume-name {
+  margin-top: 90px;
+  display: block;
+}
+
+.resume-headers {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+
+.resume-details {
+  color: black;
+  font-weight: normal;
+  display: block;
+}
+
+.resume-details p {
+  margin: 2px;
+}
+
+.work-header {
+  margin-top: 10px;
+}
+
+.resume-education {
+  display: inline-block;
+  float: left;
+  width: 33%;
+}
+
+.resume-title {
+  font-weight: bold; 
+  text-align: center;
 }
 
 
