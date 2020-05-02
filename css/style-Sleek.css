@@ -85,9 +85,9 @@ a:hover {
 
 .main-content {
   /* color:#32D93A;  */
-  color: black; 
+  color: white; 
   padding: 2em;
-  background-color: #ffd1dc;
+  background-color: gray;
   flex-grow: 1;
 }
  
