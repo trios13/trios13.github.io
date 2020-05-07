@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/normalize.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/style-Sleek.css">
+    <link rel="stylesheet" type="text/css" href="/css/chat-room.css">
     <!-- <link rel="stylesheet" type="text/css" href="/css/Style-Pastel.css"> -->
-    <script type = 'text/javascript' src="/js/Basic.js"></script>    
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with Github Pages.</p>
-    <p>I'm a basic website created so Troy can re-learn an experiment with website development.</p>
-    <p>The current functionality is using an external js file.</p>
-    <button type="button"  onclick="javascript:hiClick();">Click Me</button>
-    <p id="hello"></p>
+    <div class="wrap">
+        <header class="main-header">
+            <div class="main-nav">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>                        
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#top"></a>Chat Test</a></li>
+                </ul>
+            </div>
+        </header>
+    <div class="members-count"></div>
+    <div class="members-list"></div>
+    <div class="messages"></div>
+    <form class="message-form" on-submit="return false;">
+        <input class="message-form_input" placeholder="Enter message..." type="text"/>
+        <input class="message-form_button" placeholder="Send" type="submit"/>
+    </form>
+    <script type = 'text/javascript' src="/js/chat-room.js"></script>   
 </body>
 </html>
