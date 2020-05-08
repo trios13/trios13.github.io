@@ -1,5 +1,5 @@
 const CHANNEL_ID = "h2L493GkS9NV4gpX";
-const drone= = new ScaleDrone(CHANNEL_ID, {
+const drone = new ScaleDrone(CHANNEL_ID, {
     data: {
         name: getRandomName(),
         color: getRandomColor(),
