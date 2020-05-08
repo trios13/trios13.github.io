@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/css/style-Sleek.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/css/chat-room.css"> -->
+        <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="main-header">
+                <div class="main-nav">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>                        
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#top"></a>Chat Test</a></li>
+                    </ul>
+                </div>
+            </header>
+        <div class="members-count"></div>
+        <div class="members-list"></div>
+        <div class="messages"></div>
+        <form class="message-form" on-submit="return false;">
+            <input class="message-form_input" placeholder="Enter message..." type="text"/>
+            <input class="message-form_button" placeholder="Send" type="submit"/>
+        </form>
+        <script type = 'text/javascript' src="/js/chat-room.js"></script>   
+        <footer>
+            <p>@2019 Troy Rios</p>
+        </footer>
+    </body>
+</html>
