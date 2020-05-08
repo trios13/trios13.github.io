@@ -41,26 +41,26 @@ drone.on('open', error => {
     //list of users in the room
     room.on('members', m => {
         members = m;
-        //updateMembersDom(); uncomment later
+        updateMembersDOM(); 
     });
 
     //User Joining the Room
     room.on('member_join', member => {
         members.push(member);
-        //updateMembersDom(); uncomment later
+        updateMembersDOM(); 
     });
 
     //User leaving room
     room.on('member_leave', ({id}) => {
         const index = members.findIndex(member => member.id === id);
         members.splice(index, 1);
-        //updateMembersDOM(); uncomment later
+        updateMembersDOM();
     });
 
     //Listen for messages sent
     room.on('data', (text, member) => {
         if (member) {
-            //addMessageToList(text, member); uncomment later
+            addMessageToListDOM(text, member); 
         } 
         else {
             //Messge is from server
@@ -70,3 +70,60 @@ drone.on('open', error => {
 
 //Keeps track of users.
 let members = [];
+
+const DOM = {
+    memberCount: document.querySelector('.member-count'),
+    memberList: document.querySelector('.member-list'),
+    messages: document.querySelector('.messages'),
+    input: document.querySelector('.message-form_input'),
+    form: document.querySelector('.message-form'),
+};
+
+function createMemberElement(member) {
+    const {name, color} = member.clientData;
+    const element = document.createElement('div');
+    element.appendChild(document.createTextNode(name));
+    element.className = 'member';
+    element.style.color = color;
+    return element;
+}
+
+function updateMembersDOM() {
+    DOM.memberCount.innerText = '${members.length} users in room: ';
+    DOM.memberList.innerHTML = '';
+    members.forEach(member => 
+        DOM.memberList.appendChild(createMemberElement(member))
+    );
+}
+
+function createMessageElement(text, member) {
+    const element = document.createElement('div');
+    element.appendChild(createMemberElement(member));
+    element.appendChild(document.createTextNode(text));
+    element.className = 'message';
+    return element;
+}
+
+function addMessageToListDOM(text, member) {
+    const element = DOM.messages;
+    const pastTop = element.scrollTop === element.scrollHeight - element.clientHeight;
+    element.appendChild(createMessageElement(text, memeber));
+    if (pastTop) {
+        element.scrollTop = element.scrollHeight - element.clientHeight;
+    }
+}
+
+DOM.form.addEventListener('submit', sendMessage);
+
+function sendMessage() {
+    const value = DOM.input.value;
+    if (value === '') {
+        return;
+    }
+    DOM.input.value = '';
+    drone.publish({
+        room: 'observable-chat',
+        message: value,
+    });
+}
+ 
