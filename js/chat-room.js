@@ -6,23 +6,8 @@ const drone = new ScaleDrone(CHANNEL_ID, {
     },
 });
 
-function getRandomName() {
-    const adjs = ["autumn", "hidden", "bitter", "silent"];
-    const nouns = ["waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning"]; 
-    return (
-        adjs[Math.floor(Math.random() * adjs.length)] + "_" +
-        nouns[Math.floor(Math.random() * nouns.length)]
-    );
-};
-
-function getRandomColor() {
-    return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
-}
-
-function createName() {
-    // create function to allow user to create their own username
-
-};
+//Keeps track of users.
+let members = [];
 
 //Connect to Scaledrone room
 drone.on('open', error => {
@@ -38,6 +23,7 @@ drone.on('open', error => {
         }
         console.log('Successfully joined room');
     });
+
     //list of users in the room
     room.on('members', m => {
         members = m;
@@ -68,8 +54,32 @@ drone.on('open', error => {
     });
 });
 
-//Keeps track of users.
-let members = [];
+drone.on('close', event => {
+    console.log('Connection was closed', event);
+});
+
+drone.on('error', error => {
+    console.error(error);
+});
+
+
+function getRandomName() {
+    const adjs = ["autumn", "hidden", "bitter", "silent"];
+    const nouns = ["waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning"]; 
+    return (
+        adjs[Math.floor(Math.random() * adjs.length)] + "_" +
+        nouns[Math.floor(Math.random() * nouns.length)]
+    );
+};
+
+function getRandomColor() {
+    return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+}
+
+function createName() {
+    // create function to allow user to create their own username
+
+};
 
 const DOM = {
     memberCount: document.querySelector('.member-count'),
@@ -78,40 +88,6 @@ const DOM = {
     input: document.querySelector('.message-form_input'),
     form: document.querySelector('.message-form'),
 };
-
-function createMemberElement(member) {
-    const {name, color} = member.clientData;
-    const element = document.createElement('div');
-    element.appendChild(document.createTextNode(name));
-    element.className = 'member';
-    element.style.color = color;
-    return element;
-}
-
-function updateMembersDOM() {
-    DOM.memberCount.innerText = '${members.length} users in room: ';
-    DOM.memberList.innerHTML = '';
-    members.forEach(member => 
-        DOM.memberList.appendChild(createMemberElement(member))
-    );
-}
-
-function createMessageElement(text, member) {
-    const element = document.createElement('div');
-    element.appendChild(createMemberElement(member));
-    element.appendChild(document.createTextNode(text));
-    element.className = 'message';
-    return element;
-}
-
-function addMessageToListDOM(text, member) {
-    const element = DOM.messages;
-    const pastTop = element.scrollTop === element.scrollHeight - element.clientHeight;
-    element.appendChild(createMessageElement(text, memeber));
-    if (pastTop) {
-        element.scrollTop = element.scrollHeight - element.clientHeight;
-    }
-}
 
 DOM.form.addEventListener('submit', sendMessage);
 
@@ -125,5 +101,38 @@ function sendMessage() {
         room: 'observable-chat',
         message: value,
     });
-};
- 
+}
+
+function createMemberElement(member) {
+    const {name, color} = member.clientData;
+    const elem = document.createElement('div');
+    elem.appendChild(document.createTextNode(name));
+    elem.className = 'member';
+    elem.style.color = color;
+    return elem;
+}
+
+function updateMembersDOM() {
+    DOM.memberCount.innerText = '${members.length} users in room: ';
+    DOM.memberList.innerHTML = '';
+    members.forEach(member => 
+        DOM.memberList.appendChild(createMemberElement(member))
+    );
+}
+
+function createMessageElement(text, member) {
+    const elem = document.createElement('div');
+    elem.appendChild(createMemberElement(member));
+    elem.appendChild(document.createTextNode(text));
+    elem.className = 'message';
+    return elem;
+}
+
+function addMessageToListDOM(text, member) {
+    const elem = DOM.messages;
+    const wasTop = elem.scrollTop === elem.scrollHeight - elem.clientHeight;
+    elem.appendChild(createMessageElement(text, memeber));
+    if (wasTop) {
+        elem.scrollTop = elem.scrollHeight - elem.clientHeight;
+    }
+}
