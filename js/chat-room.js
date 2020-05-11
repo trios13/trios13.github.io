@@ -125,5 +125,5 @@ function sendMessage() {
         room: 'observable-chat',
         message: value,
     });
-}
+};
  
