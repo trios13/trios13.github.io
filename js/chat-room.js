@@ -10,7 +10,7 @@ let members = [];
 
 drone.on('open', error => {
   if (error) {
-    return console.error(error);
+    return console.error(ermemberror);
   }
   console.log('Successfully connected to Scaledrone');
 
