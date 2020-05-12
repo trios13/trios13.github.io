@@ -75,7 +75,7 @@ const DOM = {
   membersCount: document.querySelector('.members-count'),
   membersList: document.querySelector('.members-list'),
   messages: document.querySelector('.messages'),
-  input: document.querySelector('.message-form__input'),
+  input: document.querySelector('.message-form_input'),
   form: document.querySelector('.message-form'),
 };
 
