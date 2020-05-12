@@ -7,6 +7,7 @@ body {
   max-height: 100vh;
   font-family: 'Roboto', sans-serif;
   text-align: left;
+  width: 50%;
 }
 
 .members-count,
@@ -46,4 +47,26 @@ body {
 }
 .message-form__button {
   margin: 10px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .container {
+    width: 80%;
+  }
+  
+  .name,
+  .main-nav li {
+    display: inline;
+  } 
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
