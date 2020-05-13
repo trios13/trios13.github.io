@@ -9,6 +9,10 @@ body {
     text-align: left;
     width: 50%;
   }
+
+  html {
+    background: linear-gradient(to right, blue 0%, grey 100% );
+  }
   
   .members-count,
   .members-list,
@@ -45,6 +49,7 @@ body {
   .message-form {
     display: flex;
     flex-shrink: 0;
+    background-color: white;;
   }
   .message-form__input {
     flex-grow: 1;
