@@ -75,8 +75,8 @@ const DOM = {
   membersCount: document.querySelector('.members-count'),
   membersList: document.querySelector('.members-list'),
   messages: document.querySelector('.messages'),
-  input: document.querySelector('.message-form_input'),
-  form: document.querySelector('.message-form'),
+  input: document.getElementsByClassName('.message-form_input'),
+  form: document.getElementsByClassName('.message-form'),
 };
 
 DOM.form.addEventListener('submit', sendMessage);
