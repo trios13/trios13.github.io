@@ -75,7 +75,6 @@ const DOM = {
   membersCount: document.querySelector('.members-count'),
   membersList: document.querySelector('.members-list'),
   messages: document.querySelector('.messages'),
-  messages-sent: document.querySelector('.messages-sent'),
   input: document.querySelector('.message-form_input'),
   form: document.querySelector('.message-form'),
 };
@@ -99,6 +98,7 @@ function createMemberElement(member) {
   const el = document.createElement('div');
   el.appendChild(document.createTextNode(name));
   el.className = 'member';
+  el.style.color = color;
   return el;
 }
 
