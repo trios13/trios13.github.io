@@ -19,6 +19,7 @@ body {
     border: 2px solid grey;
     border-radius: 25px;
     padding: 25px;
+    margin-top: 50px;
   }
   
   .members-count,
