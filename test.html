@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <!-- <link rel="stylesheet" 
+         <link rel="stylesheet" 
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh">
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" 
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-        <link rel="stylesheet" type="text/css" href="/css/style-Sleek.css">
-        <link rel="stylesheet" type="text/css" href="/css/test.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/css/style-Sleek.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/test.css"> -->
         <!-- <link rel="stylesheet" type="text/css" href="/css/chat-room.css"> -->
-    </head>
-    <body>
+    <!-- </head> -->
+    <!-- <body>
       <header class="main-header">
           <div class="main-nav" style="padding-right: 15px;">
               <ul class="nav">
@@ -40,5 +40,299 @@
       <footer>
           <p>@2020 Troy Rios</p>
       </footer>
-    </body>
+    </body> -->
+<!-- </html> -->
+
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Chat Bubbles</title>
+		
+		<style type="text/css">
+			html, body {
+				background-color:#e7e7e7;
+				height:100%;
+				margin:10px;
+				padding:0;
+				width:100%;
+			}
+			.bubble_body {
+				background-color:#a5f7c3;
+				border-color:green;
+				border-radius:10px;
+				border-style:solid;
+				margin-left:auto;
+				margin-right:auto;
+				padding:5px;
+				position:relative;
+				text-align:center;
+				width:250px;
+			}
+			.bubble_body_left {
+				background-color:#a5f7c3;
+				border-color:green;
+				border-radius:10px;
+				border-style:solid;
+				margin-left:auto;
+				margin-right:auto;
+				padding:5px;
+				position:relative;
+				text-align:center;
+				width:250px;
+			}
+			.bubble_body_right {
+				background-color:#f4a5c7;
+				border-color:magenta;
+				border-radius:10px;
+				border-style:solid;
+				margin-left:auto;
+				margin-right:auto;
+				padding:5px;
+				position:relative;
+				text-align:center;
+				width:250px;
+			}
+			.left_triangle {
+				border-color:#a5f7c3 transparent transparent transparent;
+  				border-style:solid;
+  				border-width:20px;
+			 	height:0;
+  				width:0;
+  				position:absolute;
+  				bottom:-40px;
+  				left:30px;
+			}
+			.left_triangle_border {
+				border-color:green transparent transparent transparent;
+  				border-style:solid;
+ 				border-width:24px;
+  				height:0;
+  				width:0;
+  				position:absolute;
+  				bottom:-48px;
+  				left:26px;
+			}
+			.middle_triangle {
+				border-color:#a5f7c3 transparent transparent transparent;
+  				border-style:solid;
+  				border-width:20px;
+			 	height:0;
+  				width:0;
+  				position:absolute;
+  				bottom:-40px;
+  				left:105px;
+			}
+			.middle_triangle_border {
+				border-color:green transparent transparent transparent;
+  				border-style:solid;
+  				border-width:24px;
+			 	height:0;
+  				width:0;
+  				position:absolute;
+  				bottom:-48px;
+  				left:101px;
+			}
+			.right_triangle {
+				border-color:#a5f7c3 transparent transparent transparent;
+  				border-style:solid;
+  				border-width:20px;
+			 	height:0;
+  				width:0;
+  				position:absolute;
+  				bottom:-40px;
+  				right:30px;
+			}
+			.right_triangle_border {
+				border-color:green transparent transparent transparent;
+  				border-style:solid;
+ 				border-width:24px;
+  				height:0;
+  				width:0;
+  				position:absolute;
+  				bottom:-48px;
+  				right:26px;
+			}
+			.left_side_triangle {
+				border-color: transparent #a5f7c3 transparent transparent;
+  				border-style:solid;
+  				border-width:6px;
+			 	height:0;
+  				width:0;
+  				position:absolute;
+  				top:8px;
+  				left:-12px;
+			}
+			.left_side_triangle_border {
+				border-color:transparent green transparent transparent;
+  				border-style:solid;
+ 				border-width:10px;
+  				height:0;
+  				width:0;
+  				position:absolute;
+  				top:4px;
+  				left:-20px;
+			}
+			.right_side_triangle {
+				border-color: transparent transparent transparent #f4a5c7;
+  				border-style:solid;
+  				border-width:6px;
+			 	height:0;
+  				width:0;
+  				position:absolute;
+  				top:8px;
+  				right:-12px;
+			}
+			.right_side_triangle_border {
+				border-color:transparent transparent transparent magenta;
+  				border-style:solid;
+ 				border-width:10px;
+  				height:0;
+  				width:0;
+  				position:absolute;
+  				top:4px;
+  				right:-20px;
+			}
+			#chat_left {
+				position:absolute;
+				left:50%;
+				margin-left:-425px;
+				top:100px;
+				width:200px;
+			}
+			#input_text_left {
+				background-color:white;
+				box-shadow: 0px 0px 5px #000000;
+				-moz-box-shadow: 0px 0px 5px #000000;
+				-webkit-box-shadow: 0px 0px 5px #000000;
+				height:100px;
+				margin-left:auto;
+				margin-right:auto;
+				padding:5px;
+				width:200px;
+			}
+			#chat_right {
+				position:absolute;
+				margin-right:-450px;
+				right:50%;
+				top:100px;
+				width:200px;
+			}
+			#input_text_right {
+				background-color:white;
+				box-shadow: 0px 0px 5px #000000;
+				-moz-box-shadow: 0px 0px 5px #000000;
+				-webkit-box-shadow: 0px 0px 5px #000000;
+				height:100px;
+				margin-left:auto;
+				margin-right:auto;
+				padding:5px;
+				width:200px;
+			}
+			#container {
+				background-color:white;
+				margin-left:auto;
+				margin-right:auto;
+				padding:10px;
+				text-align:center;
+				width:400px;
+				overflow-y:scroll;
+				height:600px;
+			}
+		</style>	
+		
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#submit_left").click(function() {
+					var left_text = $('textarea#input_text_left').val(); // get textarea contents
+					if ($('textarea#input_text_left').val() != '') { // make sure textarea is not empty
+						$('#container').append('<br/><div class="bubble_body_left">'
+								+ left_text +
+								'<div class="left_side_triangle_border"></div><div class="left_side_triangle"></div></div><br/>');
+						$("#input_text_left").val('');
+					}
+				});
+				
+				$("#submit_right").click(function() {
+					var right_text = $('textarea#input_text_right').val();
+					if ($('textarea#input_text_right').val() != '') {
+						$('#container').append('<br/><div class="bubble_body_right">'
+								+ right_text +
+								'<div class="right_side_triangle_border"></div><div class="right_side_triangle"></div></div><br/>');
+						$("#input_text_right").val('');
+					}
+				});				
+			});
+			
+			window.setInterval(function() {
+  				var bubbleContainer = document.getElementById('container');
+  				bubbleContainer.scrollTop = bubbleContainer.scrollHeight;
+			}, 10);
+		</script>
+		
+	</head>
+	
+	<body>
+		<h1>CSS Speech Bubbles Practice!</h1>
+		
+		<div id="chat_left">
+			<h3>Chat Box 1</h3>
+			<textarea id="input_text_left"></textarea>
+			<br/>
+			<button id="submit_left">Submit</button>
+		</div>
+		
+		<div id="chat_right">
+			<h3>Chat Box 2</h3>
+			<textarea id="input_text_right"></textarea>
+			<br/>
+			<button id="submit_right">Submit</button>
+		</div>
+		
+		<div id="container">
+			<h3>Conversation</h3>
+		</div>
+		
+		<!-- TEST BUBBLES 
+		<div class="bubble_body">
+			This is my bubble! Isn't it lovely? I think these basic CSS properties are pretty cool. They are like little secrets! Awesome secrets!
+			<div class="left_triangle_border"></div>
+			<div class="left_triangle"></div>
+		</div>
+		
+		<br/><br/>
+		
+		<div class="bubble_body">
+			OMG! I just made another speech bubble!
+			<div class="middle_triangle_border"></div>
+			<div class="middle_triangle"></div>
+		</div>
+		
+		<br/><br/>
+		
+		<div class="bubble_body">
+			Another bubble just for fun!
+			<div class="right_triangle_border"></div>
+			<div class="right_triangle"></div>
+		</div>
+		
+		<br/><br/>
+		
+		<div class="bubble_body">
+			Here's a bubble with a left side arrow!
+			<div class="left_side_triangle_border"></div>
+			<div class="left_side_triangle"></div>
+		</div>
+		
+		<br/><br/>
+		
+		<div class="bubble_body">
+			Here's a bubble with a right side arrow!
+			<div class="right_side_triangle_border"></div>
+			<div class="right_side_triangle"></div>
+		</div>
+		-->
+		
+	</body>
 </html>
