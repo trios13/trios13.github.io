@@ -37,6 +37,7 @@ body {
     flex-shrink: 1;
     overflow: auto;
     margin-top: 35px;
+    text-align:left;
     /* testing chat bubble positioning */
     background-color:#a5f7c3;
     border-color:green;
@@ -46,7 +47,7 @@ body {
     margin-right:auto;
     padding:5px;
     position:relative;
-    text-align:center;
+    
   }
 
   .messages-sent {
@@ -60,7 +61,6 @@ body {
     margin-right:auto;
     padding:5px;
     position:relative;
-    text-align:center;
     width:250px;
   }
   
